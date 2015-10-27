@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>PersonalSite</title>
+  <title>Hello</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+	<nav>
+		<a href="#">personal</a>
+		<a href="#">portfolio</a>
+		<a href="#">pictures</a>
+		<a href="#">ponderings</a>
+	</nav>
 <%= yield %>
 
 </body>

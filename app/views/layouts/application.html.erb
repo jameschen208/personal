@@ -2,21 +2,47 @@
 <html>
 <head>
   <title>Hello</title>
+  <link rel="shortcut icon" href="/icon.ico">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:300' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<nav>
-		<a href="#">personal</a>
-		<a href="#">portfolio</a>
-		<a href="#">pictures</a>
-		<a href="#">ponderings</a>
-	</nav>
-<%= yield %>
+  <header id="main_header">
+  	<nav>
+      <%= link_to "personal", root_path %>
 
+  		<a href="#">portfolio</a>
+  		<a href="#">pictures</a>
+
+      <%= link_to "ponderings", posts_path %>
+  	</nav>
+  </header>
+  <div id="navblock"></div>
+
+
+  <div id="main_content">
+
+    <div id="contact_link">
+      <a href="#" >contact</a>
+    </div>
+
+    <%= yield %>
+
+  </div>
+
+  <footer id="main_footer">
+    <nav>
+      <a href="http://instagram.com/jameschen208" target="_blank"><i class="fa fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/jameschen208" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+      <a href="https://github.com/jameschen208" target="_blank"><i class="fa fa-github-square"></i></a>
+    </nav>
+
+    <div id="quote">add sign in IF statement here</div>
+<div class="clearfix"></div>
+  </footer>
 </body>
 </html>

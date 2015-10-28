@@ -1,1 +1,138 @@
 @import 'normalize';
+$dark: #424652;
+$white: #FFFFFF;
+$light: #9a9da4;
+$highlight: #8bc6db;
+$border: #E9E9E9;
+
+/********* application.html.erb *********/
+
+body{	
+	font-family: 'Alegreya Sans', sans-serif;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+p{
+	font-size: 18px;
+}
+
+/********* NavBar *********/
+
+#main_header{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 75px;
+	font-size: 18px;
+	background-color: white;
+	border-bottom: 1px solid $border;
+	text-align: center;
+	nav{ 
+		padding-top: 1.5rem;
+		:link{
+			color:black;
+			text-decoration: none;
+			font-size: 18px;
+			margin: 0 2.5rem;
+		}
+
+		:visited{
+			color:black;
+			text-decoration: none;
+			font-size: 18px;
+		}
+		:hover{
+			color: $highlight; 
+		}
+	}	
+}
+
+#navblock{
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 75px;
+	background-color: white;
+}
+
+/********* Contact *********/
+
+div#contact_link{
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	margin-top: 50px;
+	margin-bottom: 0px;
+	:link{
+			color:black;
+			text-decoration: none;
+	}
+	:visited{
+			color:black;
+			text-decoration: none;
+	}
+	:hover{
+			color: $highlight; 
+	}
+}
+
+
+/********* Content *********/
+
+#main_content{
+	padding: 0 6%;
+}
+
+.main_header{
+	font-size: 100px;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+.secondary_header{
+	font-style: italic;
+	font-family: 'Bad Script', cursive;
+	font-size: 36px;
+	text-align: center;
+	margin-top: 0px;
+}
+
+hr {
+	width: 10em;
+	height: 2px;
+	border: 0;
+	border-top: 2px solid $border ;
+	text-align: center;
+}
+
+/********* Footer *********/
+
+#main_footer{
+	position: fixed;
+	bottom: 5px;
+	left: 10px;
+	nav{
+		i{
+			color: black;
+			font-size: 20px;
+			padding: 0px 2.5px;
+		}
+
+		i:hover{
+			color: $highlight;
+		}
+	}
+	div{
+		position: fixed;
+		bottom: 5px;
+		right: 5px;
+		&:hover {
+			color: $highlight;
+		}
+	}
+}
+/********* Personal *********/
+/********* Portfolio *********/
+/********* Photos *********/
+/********* Ponderings *********/

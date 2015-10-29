@@ -73,7 +73,7 @@ div#contact_link{
 	font-weight: bold;
 	font-size: 20px;
 	margin-top: 50px;
-	margin-bottom: 0px;
+	margin-bottom: 20px;
 	:link{
 			color:black;
 			text-decoration: none;
@@ -126,32 +126,6 @@ hr {
 	padding: 4rem 0;
 }
 
-/********* Footer *********/
-
-#main_footer{
-	position: fixed;
-	bottom: 5px;
-	left: 10px;
-	nav{
-		i{
-			color: black;
-			font-size: 20px;
-			padding: 0px 2.5px;
-		}
-
-		i:hover{
-			color: $highlight;
-		}
-	}
-	div{
-		position: fixed;
-		bottom: 5px;
-		right: 5px;
-		&:hover {
-			color: $highlight;
-		}
-	}
-}
 /********* Personal *********/
 /********* Portfolio *********/
 /********* Photos *********/
@@ -182,6 +156,23 @@ hr {
 		}
 	}
 }
+
+#post_show_content {
+	header {
+		text-align: center;
+		.date {
+			font-size: .9em;
+			color: $light;
+			margin: 0;
+		}
+		h1 {
+			margin: 0;
+		}
+	}
+	hr {
+		margin: 3em auto;
+	}
+}
 	/********* Sign In & post#new *********/
 input[type="text"], input[type="email"], input[type="password"], textarea {
 	width: 100%;
@@ -195,8 +186,5 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
 textarea {
 	min-height: 20em;
 }
-
-
-
 
 @import 'pygments'

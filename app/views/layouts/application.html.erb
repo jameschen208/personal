@@ -21,13 +21,20 @@
       <%= link_to "ponderings", posts_path %>
   	</nav>
   </header>
+  
+  <% if notice %>
+  <p class="notice"><%= notice %></p>
+  <% elsif alert %>
+  <p class="alert"><%= alert %></p>
+  <% end %>
+
   <div id="navblock"></div>
 
 
   <div id="main_content">
 
     <div id="contact_link">
-      <a href="#" >contact</a>
+      <%= link_to "contact", new_contact_path %>
       <nav>
       <a href="http://instagram.com/jameschen208" target="_blank"><i class="fa fa-instagram"></i></a>
       <a href="https://www.linkedin.com/in/jameschen208" target="_blank"><i class="fa fa-linkedin-square"></i></a>

@@ -2,7 +2,7 @@
 $dark: #424652;
 $white: #FFFFFF;
 $light: #9a9da4;
-$highlight: #8bc6db;
+$highlight: #6698FF;
 $border: #E9E9E9;
 
 /********* application.html.erb *********/
@@ -164,6 +164,22 @@ hr {
 	text-align: center;
 }
 /********* Photos *********/
+#insta-wrap{
+	display: block;
+
+}
+
+#instafeed img{
+	padding: 10px;
+	margin: 0 auto;
+}
+
+#instafeed img:hover{
+	
+}
+
+
+
 /********* Ponderings *********/
 
 #posts_wrapper {

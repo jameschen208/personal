@@ -1,10 +1,10 @@
-<div id="post_show_content" class="skinny_wrapper">
+<div class="container">
 	<header>
-		<h1 class="secondary_header"><%= @post.title %></h1>
-		<p class="date"><%= @post.created_at.strftime('%A, %B %d') %></p>
+		<h1 class="header center"><%= @post.title %></h1>
+		<h5 class=""><%= @post.created_at.strftime('%A, %B %d') %></h5>
 	</header>
 	<hr>
-	<div id="content">
+	<div>
 		<%= markdown @post.content %>
 	</div>
 

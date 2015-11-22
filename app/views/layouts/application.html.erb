@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Hello</title>
+  <title>creating...</title>
   <%= favicon_link_tag "icon.ico" %>
   <!-- mobile -->
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -42,18 +42,14 @@
       </div>
     </nav>
   </div>
-  
-  <% if notice %>
-  <p class="notice"><%= notice %></p>
-  <% elsif alert %>
-  <p class="alert"><%= alert %></p>
-  <% end %>
-
-    <div id="contact_link">
-     
-      
-    </div>
-
+  <div class="container">
+    <% if notice %>
+    <p class="notice"><%= notice %></p>
+    <% elsif alert %>
+    <p class="alert"><%= alert %></p>
+    <% end %>
+  </div>
+    
     <%= yield %>
 
   </div>

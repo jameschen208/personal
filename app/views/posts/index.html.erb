@@ -2,9 +2,9 @@
 	<h1 class="header center">Contemplations</h1>
 	<h4 class="center-align bad-script" id="job-title">100% from concentrate</h4>
 
-	<div id="posts_wrapper" class="skinny_wrapper wrapper_padding">
+	<div>
 		<% @posts.each do |post| %>
-			<div class="post">
+			<div class="header">
 				<p class="date"><%= post.created_at.strftime('%A, %B %d') %></p>
 				<h2><a href="#"><%= link_to post.title, post %></a></h2>
 				<hr>

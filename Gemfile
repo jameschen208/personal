@@ -17,6 +17,7 @@ gem 'will_paginate', '~> 3.0', '>= 3.0.7'
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem 'devise', '~> 3.5', '>= 3.5.2'
 gem 'instagram', '~> 1.1', '>= 1.1.6'
+gem 'materialize-sass'
 
 group :development, :test do
   gem 'byebug'

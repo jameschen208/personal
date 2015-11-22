@@ -1,14 +1,15 @@
-<h1 class="main_header">contemplations</h1>
-<h2 class="secondary_header">100% from concentrate</h2>
+<div class="container">
+	<h1 class="header center">Contemplations</h1>
+	<h4 class="center-align bad-script" id="job-title">100% from concentrate</h4>
 
-<div id="posts_wrapper" class="skinny_wrapper wrapper_padding">
-	<% @posts.each do |post| %>
-		<div class="post">
-			<p class="date"><%= post.created_at.strftime('%A, %B %d') %></p>
-			<h2><a href="#"><%= link_to post.title, post %></a></h2>
-			<hr>
-		</div>
-	<% end %>
+	<div id="posts_wrapper" class="skinny_wrapper wrapper_padding">
+		<% @posts.each do |post| %>
+			<div class="post">
+				<p class="date"><%= post.created_at.strftime('%A, %B %d') %></p>
+				<h2><a href="#"><%= link_to post.title, post %></a></h2>
+				<hr>
+			</div>
+		<% end %>
+	</div>
 </div>
-
 <%= will_paginate @posts %>

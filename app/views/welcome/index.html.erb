@@ -1,31 +1,169 @@
-<h1 class="main_header">James Chen</h1>
-<h2 class="secondary_header">full stack web developer</h2>
-<br>
-<hr>
-<br>
-<div class="skinny_wrapper">
-	<h2>HELLO WORLD!</h2>
-	<p>
-		I live in Philadelphia, where I learned to code and have taken this wonderful skillset to help individuals, small businesses, and early-stage start-ups build their web presence.
-	</p>
-	<p>
-		I love to stay fit, eat healthy, and take photographs. 	
-	</p>
-	<div id="col-1">
-		<h2>
-			Future goals:
-		</h2>
-		<ul>
-			<li><strike>install solar panels onto my residence</strike></li>
-			<li>buy a drone to up my photography</li>
-			<li>adopt a puppy, a hamster, and a parakeet</li>
-			<li>own a Tesla and use my home to charge my car</li>
-			<li>create beautifully and intricately designed websites for anyone who appreciates my eye for design</li>
-		</ul>
-		<br>
-		<hr>
+	<!-------------- HOME//ABOUT -------------->
+	<span id="home"></span>
+	<div class="container">
+		<h1 class="center header" id="my-name">James Chen</h1>
+		<h4 class="center-align bad-script" id="job-title">interactive designer</h4>
+		<h5 class="center-align" id="media-icons">
+			<a href="http://instagram.com/jameschen208" target="_blank"><i class="fa fa-instagram"></i></a>
+			<a href="https://www.linkedin.com/in/jameschen208" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+			<a href="https://github.com/jameschen208" target="_blank"><i class="fa fa-github-square"></i></a>
+			<a href="https://twitter.com/jamescreatesme"><i class="fa fa-twitter-square"></i></a>
+			<hr class="hr">
+		</h5>
 	</div>
-	<div id="col-2">
-		<%= image_tag("profile.jpg") %>
+
+	<div class="container">
+		<h5 class="center"><span class="brown-text"><strong>Hello World.</strong></span> I am an Interactive Designer with a keen eye for user-focused web design. I want to guide users to the information they are looking for, using the most <span class="blue-text">beautiful and efficient</span> path possible.</h5>
 	</div>
-</div>
+	<br><br>
+
+	<!-------------- PARALLAX -------------->
+	<div class="parallax-container">
+		<h1 class="center"></h1>
+		<div class="parallax"><img src="/parallax-sky2.jpg" alt="Unsplashed background img 1"></div>
+	</div>	
+
+	<!-------------- PROJECT CARDS -------------->
+	<span id="portfolio"></span>
+	<div class="container">
+		<div class="section">
+			<h1 class="center header">Portfolio</h1>
+			<div class="row">
+				<div class="col s12 m6">
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="project-doughnut.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Keyhole Doughnuts<i class="material-icons right">more_vert</i></span>
+							<p><a href="https://keyholedoughnuts.com" class="brown-text" target="_blank">WEBSITE</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Keyhole Doughnuts<i class="material-icons right">close</i></span>
+							<p>Created a customer-facing website along with a backend content management system and blog for a new business decorated with the some current trends in web-design.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s12 m6">
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="project-overflow.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">NYCDA Overflow<i class="material-icons right">more_vert</i></span>
+							<p><a href="#" class="brown-text" target="_blank">This is a link</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">NYCDA Overflow<i class="material-icons right">close</i></span>
+							<p>Here is some more information about this product that is only revealed once clicked on.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- <div class="col s12 m4">
+					<div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="small.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+							<p><a href="#" class="brown-text" target="_blank">This is a link</a></p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+							<p>Here is some more information about this product that is only revealed once clicked on.</p>
+						</div>
+					</div>
+				</div> -->
+			</div>
+
+		</div>
+	</div>
+
+	<!-------------- PARALLAX -------------->
+	<div class="parallax-container">
+		<h1 class="center"></h1>
+		<div class="parallax"><img src="/parallax-succulent.jpg" alt="Unsplashed background img 1"></div>
+	</div>	
+
+	<!-------------- SKILLS -------------->
+	<span id="skill-set"></span>
+	<div class="container">
+		<div class="section">
+			<h1 class="center header">Skill Set</h1>
+			<div class="row">
+				<div class="col s12 m4">
+					<div class="icon-block">
+						<h2 class="center brown-text"><i class="medium material-icons">chat_bubble_outline</i></h2>
+						<h5 class="center">Front-End Languages</h5>
+
+						<p class="center light">HTML5 <span class="divide">||</span> CSS3 <span class="divide">||</span> SASS <span class="divide">||</span> JavaScript <span class="divide">||</span> jQuery</p>
+						<hr class="hr">
+					</div>
+				</div>
+
+				<div class="col s12 m4">
+					<div class="icon-block">
+						<h2 class="center brown-text"><i class="medium material-icons">dashboard</i></h2>
+						<h5 class="center">Web Frameworks</h5>
+
+						<p class="center light">MaterializeCSS <span class="divide">||</span> Bootstrap <span class="divide">||</span> Parse</p>
+						<hr class="hr">
+					</div>
+				</div>
+
+				<div class="col s12 m4">
+					<div class="icon-block">
+						<h2 class="center brown-text"><i class="medium material-icons">settings</i></h2>
+						<h5 class="center">Back-End Knowledge</h5>
+
+						<p class="center light">Ruby on Rails <span class="divide">||</span> SQLite3 <span class="divide">||</span> PostgreSQL <span class="divide">||</span> ActiveRecord <span class="divide">||</span> Sinatra <span class="divide">||</span> Heroku <span class="divide">||</span> Amazon Web Services</p>
+						<hr class="hr">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-------------- PARALLAX -------------->
+	<div class="parallax-container">
+		<h1 class="center"></h1>
+		<div class="parallax"><img src="/parallax-flower.jpg" alt="Unsplashed background img 1"></div>
+	</div>
+
+	<!-------------- CONTACT US -------------->
+	<span id="contact"></span>
+	<div class="container">
+		<div class="section">
+			<h1 class="header center contact">Contact</h1>
+			<h5 class="center">Phone: 717 <span class="divide">||</span> 460 <span class="divide">||</span> 5444</h5>
+			<h5 class="center-align" id="media-icons">
+			<a href="http://instagram.com/jameschen208" target="_blank"><i class="fa fa-instagram"></i></a>
+			<a href="https://www.linkedin.com/in/jameschen208" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+			<a href="https://github.com/jameschen208" target="_blank"><i class="fa fa-github-square"></i></a>
+			<a href="https://twitter.com/jamescreatesme"><i class="fa fa-twitter-square"></i></a>
+			<hr class="hr">
+		</h5>
+		</div>
+	</div>
+	<!--------------  FOOTER -------------->
+	<footer class="page-footer brown">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12 center-align">
+					<h5 class="white-text">Email Me</h5>
+					<a href="mailto:hello@jamescreates.me?Subject=Hello%20again" target="_top"><i class="material-icons medium white-text">email</i></a>
+				</div>
+				<div class="col l6 s12 center-align">
+					<h5 class="white-text">Resume</h5>
+					<a href="james-chen-resume.pdf" target="_blank"><i class="material-icons medium white-text center-align">assignment</i></a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				jamescreates © 2015 Copyright
+			</div>
+		</div>
+	</footer>

@@ -32,4 +32,27 @@ $(document).ready(function(){
 	    	});
 	    }	
     });
+// SMOOTH SCROLL
+    $(".brand-logo").click(function() {
+        $('html,body').animate({
+            scrollTop: target.offset().top},
+             'slow');
+    });
+    $("#portfolio-nav").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#portfolio").offset().top},
+            'slow');
+    });
+
+    $("#skill-set-nav").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#skill-set").offset().top},
+            'slow');
+    });
+
+    $("#contact-nav").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#contact").offset().top},
+            'slow');
+    });
 });

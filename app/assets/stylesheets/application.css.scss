@@ -75,6 +75,12 @@ body{
 //***************************** PARALLAX
 .parallax-container{
 	height:300px;
+	// overflow: hidden;
+}
+
+.meteor-icon{
+	position: absolute;
+	margin-top: -300px;
 }
 
 //***************************** PROJECT CARDS

@@ -19,6 +19,17 @@
 
 
 $(document).ready(function(){
-      $('.parallax').parallax();
-      $(".button-collapse").sideNav();
+    $('.parallax').parallax();
+    
+    $(".button-collapse").sideNav();
+
+    $(window).scroll(function(){
+    	var parallaxheight = 700
+    	var wScroll = $(this).scrollTop();
+	    	if (wScroll <= parallaxheight) {
+	    	$('.meteor-icon').css({
+	    		'transform' : 'translate('+ wScroll /6 +'%, '+ wScroll /3 +'%)'
+	    	});
+	    }	
+    });
 });

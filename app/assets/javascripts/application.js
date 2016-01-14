@@ -20,8 +20,10 @@
 
 $(document).ready(function(){
     $('.parallax').parallax();
-    
+
     $(".button-collapse").sideNav();
+
+    $('.modal-trigger').leanModal();
 
     $(window).scroll(function(){
     	var parallaxheight = 700

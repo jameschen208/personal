@@ -32,7 +32,19 @@ $(document).ready(function(){
 	    	$('.meteor-icon').css({
 	    		'transform' : 'translate('+ wScroll /6 +'%, '+ wScroll /3 +'%)'
 	    	});
-	    }	
+	    }
+        if(wScroll > $('.hex-row').offset().top - ($(window).height()/1.2)){
+            $('.hex-row .hex').each(function(i){
+                setTimeout(function(){
+                $('.hex-row .hex').eq(i).addClass('is-showing');
+                }, 150 * (i+1));
+            });
+        }
+        if(wScroll > $('.large-window').offset().top - $(window).height()){
+            $('.large-window').css({'background-position':'center '+ wScroll - $('.large-window').offset().top+'px'});
+            var opacity = (wScroll - $('.large-window').offset().top + 400) / (wScroll / 5)
+            $('.window-tint').css({'opacity': opacity})
+        }
     });
 // SMOOTH SCROLL
     $(".brand-logo").click(function() {

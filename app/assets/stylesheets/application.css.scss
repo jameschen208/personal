@@ -17,10 +17,10 @@
 @import 'animate';
 $highlight: #6698FF;
 $border: #E9E9E9;
-$blue: #2196F3;
+$blue: #0d47a1;
 $brown: #795548;
 
-//***************************** OVERARCHING CSS
+/***************************** OVERARCHING CSS ***/
 
 body{
 	font-family: 'Alegreya Sans', sans-serif;
@@ -28,12 +28,16 @@ body{
 
 .bad-script{
 	font-style: italic;
-	font-family: 'Bad Script', sans-serif;	
+	font-family: 'Bad Script', sans-serif;
 }
+h5, h6, p, span{
+  font-family: 'Open Sans', sans-serif;
 
+}
 .hr{
 	width: 8em;
 	color: $highlight;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
 }
 
 .clearfix:before,
@@ -41,29 +45,42 @@ body{
 	content: " ";
 	display: table;
 }
-//***************************** ANCHORS
+.relative{
+  position: relative;
+}
+.slider .indicators .indicator-item{ 
+  background-color: white;
+  border: $blue 2px solid;
+}
+.slider .indicators .indicator-item.active{
+  background-color: $blue;
+}
+/***************************** ANCHORS */
+#index-banner{
+    background-color: rgba(0,0,0,.2);
+}
 #portfolio{
 	  display: block;
-	  height: 40px; 
+	  height: 40px;
 	  margin-top: -40px;
 	  visibility: hidden;
 	  z-index: -2;
 }
 #skill-set{
 	  display: block;
-	  height: 40px; 
+	  height: 40px;
 	  margin-top: -40px;
 	  visibility: hidden;
 	  z-index: -2;
 }
 #contact{
 	  display: block;
-	  height: 100px; 
+	  height: 100px;
 	  margin-top: -100px;
 	  visibility: hidden;
 	  z-index: -2;
 }
-//***************************** HOME//ABOUT
+/***************************** HOME//ABOUT*/
 
 #my-name{
 	margin-bottom: 0px;
@@ -73,32 +90,45 @@ body{
 	margin-top: 0px;
 }
 
-//***************************** PARALLAX
+/***************************** PARALLAX*/
 .parallax-container{
-	height:300px;
+	height:600px;
 	// overflow: hidden;
 }
 
 .meteor-icon{
 	position: absolute;
 	margin-top: -300px;
+  opacity: .2;
 }
 
-//***************************** PROJECT CARDS
+/***************************** PROJECT CARDS*/
+.modal-slider, .modal-slider .modal-footer{
+  background-color: rgba(0,0,0,0);
+  box-shadow: none;
+}
 
-//***************************** SKILL SET
+/***************************** SKILL SET*/
 
 .divide{
 	color: $blue;
 	font-weight: bold;
 }
-
-//***************************** CONTACT
+#lightning{
+  position: absolute;
+  top: 65px;
+  left: 50%;
+  margin-left: -35px;
+  z-index: -1;
+  color: rgba(255, 235, 59, 1);
+  transform: scale(2, 2.1) rotate(0deg) scaleX(1);
+}
+/***************************** CONTACT*/
 .contact{
 	margin-bottom: 0px;
 }
 
-//***************************** PAGINATION
+/***************************** PAGINATION*/
 .pagination {
 text-align: center;
 	margin: 0 0 3em 0;
@@ -131,7 +161,7 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
 textarea{
 	height: 400px;
 }
-//***************************** LIBRARY
+/***************************** LIBRARY*/
   .showcase{
     height: 250px;
   }
@@ -242,13 +272,13 @@ textarea{
   }
   .color-square{
   margin: 0 auto;
-  height: 100px;
-  width: 100px;
-  border: 30px solid #999;
-  border-top: 30px solid #C66;
-  border-bottom: 30px solid #6C6;
-  border-left: 30px solid #66C;
-  border-right: 30px solid #CC6;
+  height: 10px;
+  width: 10px;
+  border: 3px solid #999;
+  border-top: 3px solid #C66;
+  border-bottom: 3px solid #6C6;
+  border-left: 3px solid #66C;
+  border-right: 3px solid #CC6;	
   }
  .hex {
     float: left;
@@ -258,7 +288,7 @@ textarea{
     transform: translateX(-20px);
     transition: all 0.3s ease-in-out;
     &.is-showing{
-      opacity: 1; 
+      opacity: 1;
       transform: translateX(0px);
     }
 }

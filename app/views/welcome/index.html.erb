@@ -19,7 +19,7 @@
 				</h5>
 				<h5 class="center">Hello World.</h5>
 
-				<h5 class="center">I am an empathetic developer with a keen eye for user-focused web design. I want to guide users to the information they are looking for, using the most <span class="">beautiful</span> and <span class="">efficient</span> path possible.</h5>	
+				<h5 class="center">I am an empathetic developer with a keen eye for user-focused web design who guide users to the information they are looking for, using the most <span class="">beautiful</span> and <span class="">efficient</span> path possible.</h5>	
 				<div class="meteor-icon">
 					<img src="/meteor-icon.svg" alt="">
 				</div>
@@ -42,6 +42,7 @@
 							HTML5 <span class="divide">||</span> 
 							CSS3 <span class="divide">||</span> 
 							SASS <span class="divide">||</span> 
+							HTML Email <span class="divide">||</span> 
 							MaterializeCSS
 							<br>
 							<br>
@@ -141,35 +142,31 @@
 							<img class="activator" src="cignaprojects/Spotlighticon.jpg">
 						</div>
 						<div class="card-content">
-							<span class="card-title activator grey-text text-darken-4">Spotlight</span>
-							<p><%= link_to "Gallery", "#modal1", :class => "modal-trigger", "data-toggle" => "modal" %></p>
+							<span class="card-title activator grey-text text-darken-4">Spotlight</span><br>
+							<span><%= link_to "1", "#spotmodal1", :class => "modal-trigger", "data-toggle" => "modal" %></span>
+							<span><%= link_to "2", "#spotmodal2", :class => "modal-trigger", "data-toggle" => "modal" %></span>
+							<span><%= link_to "3", "#spotmodal3", :class => "modal-trigger", "data-toggle" => "modal" %></span>
 						</div>
 						<!-- <p>MODAL FOR GALLERY</p> -->
-						<div id="modal1" class="modal modal-slider">
-							<div class="slider">
-								<ul class="slides">
-									<li>
-										<img src="cignaprojects/Spotlight.jpg"> <!-- random image -->
-										<div class="caption center-align">
-											<!-- <h3>This is our big Tagline!</h3>
-											<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> -->
-										</div>
-									</li>
-									<li>
-										<img src="cignaprojects/Spotlight2.jpg"> <!-- random image -->
-										<div class="caption left-align">
-							<!-- 				<h3>Left Aligned Caption</h3>
-											<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> -->
-										</div>
-									</li>
-									<li>
-										<img src="cignaprojects/Spotlight3.jpg"> <!-- random image -->
-										<div class="caption right-align">
-											<!-- <h3>Right Aligned Caption</h3>
-											<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> -->
-										</div>
-									</li>
-								</ul>
+						<div id="spotmodal1" class="modal">
+							<div class="modal-content">
+								<img class="modalimg" src="cignaprojects/Spotlight1.JPG">
+							</div>
+							<div class="modal-footer">
+						      <a href="#!" class="modal-action modal-close waves-effect waves-green blue white-text btn-flat center">Close</a>
+						    </div>
+						</div>
+						<div id="spotmodal2" class="modal">
+							<div class="modal-content">
+								<img class="modalimg" src="cignaprojects/Spotlight2.JPG">
+							</div>
+							<div class="modal-footer">
+						      <a href="#!" class="modal-action modal-close waves-effect waves-green blue white-text btn-flat center">Close</a>
+						    </div>
+						</div>
+						<div id="spotmodal3" class="modal">
+							<div class="modal-content">
+								<img class="modalimg" src="cignaprojects/Spotlight3.JPG">
 							</div>
 							<div class="modal-footer">
 						      <a href="#!" class="modal-action modal-close waves-effect waves-green blue white-text btn-flat center">Close</a>
@@ -190,9 +187,9 @@
 						</div>
 						<div class="card-reveal">
 							<span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-							<p>Fun project for a friend to help his MBA application to Cornell.</p>
-							<p>Helped him frame a cohesive story about his life and his accomplishments a beautiful website.</p>
-							<p>He was accepted into Cornell.</p>
+							<p>Fun project for a friend to help his MBA application for Cornell's business school.</p>
+							<p>Helped him frame a cohesive story about his life and his accomplishments with a beautiful website.</p>
+							<p>He was accepted and has started school!</p>
 							<p>March 2017</p>
 						</div>
 					</div>
@@ -203,35 +200,31 @@
 							<img class="activator" src="cignaprojects/TSZicon.jpg">
 						</div>
 						<div class="card-content">
-							<span class="card-title activator grey-text text-darken-4">IT&Me</span>
-							<p><%= link_to "Gallery", "#modal1", :class => "modal-trigger", "data-toggle" => "modal" %></p>
+							<span class="card-title activator grey-text text-darken-4">IT&Me</span><br>
+							<span><%= link_to "1", "#tszmodal1", :class => "modal-trigger", "data-toggle" => "modal" %></span>
+							<span><%= link_to "2", "#tszmodal2", :class => "modal-trigger", "data-toggle" => "modal" %></span>
+							<span><%= link_to "3", "#tszmodal3", :class => "modal-trigger", "data-toggle" => "modal" %></span>
 						</div>
-						<!-- <p>MODAL FOR GALLERY</p> -->
-						<div id="modal1" class="modal modal-slider">
-							<div class="slider">
-								<ul class="slides">
-									<li>
-										<img src="cignaprojects/TSZ1.JPG"> <!-- random image -->
-										<div class="caption center-align">
-											<!-- <h3>This is our big Tagline!</h3>
-											<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> -->
-										</div>
-									</li>
-									<li>
-										<img src="cignaprojects/TSZ2.JPG"> <!-- random image -->
-										<div class="caption left-align">
-							<!-- 				<h3>Left Aligned Caption</h3>
-											<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> -->
-										</div>
-									</li>
-									<li>
-										<img src="cignaprojects/TSZ3.JPG"> <!-- random image -->
-										<div class="caption right-align">
-											<!-- <h3>Right Aligned Caption</h3>
-											<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> -->
-										</div>
-									</li>
-								</ul>
+						<!-- <p>TSZ MODALS</p> -->
+						<div id="tszmodal1" class="modal">
+							<div class="modal-content">
+								<img class="modalimg" src="cignaprojects/TSZ1.JPG">
+							</div>
+							<div class="modal-footer">
+						      <a href="#!" class="modal-action modal-close waves-effect waves-green blue white-text btn-flat center">Close</a>
+						    </div>
+						</div>
+						<div id="tszmodal2" class="modal">
+							<div class="modal-content">
+								<img class="modalimg" src="cignaprojects/TSZ2.JPG">
+							</div>
+							<div class="modal-footer">
+						      <a href="#!" class="modal-action modal-close waves-effect waves-green blue white-text btn-flat center">Close</a>
+						    </div>
+						</div>
+						<div id="tszmodal3" class="modal">
+							<div class="modal-content">
+								<img class="modalimg" src="cignaprojects/TSZ3.JPG">
 							</div>
 							<div class="modal-footer">
 						      <a href="#!" class="modal-action modal-close waves-effect waves-green blue white-text btn-flat center">Close</a>
